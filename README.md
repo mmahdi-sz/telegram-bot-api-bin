@@ -23,7 +23,7 @@ Eliminates the 20+ minute C++ compilation process on **Google Colab, VPS, Docker
 
 ### Direct Download:
 ```bash
-wget -qO telegram-bot-api https://github.com/mmahdi-sz/telegram-bot-api-bin/releases/download/v10.3/telegram-bot-api
+wget -q --show-progress -O telegram-bot-api https://github.com/mmahdi-sz/telegram-bot-api-bin/releases/download/v10.3/telegram-bot-api
 chmod +x telegram-bot-api
 ```
 
