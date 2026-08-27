@@ -21,15 +21,15 @@ Eliminates the 20+ minute C++ compilation process on **Google Colab, VPS, Docker
 
 ## 📥 Quick Download (1-Liner)
 
-### Direct Download:
+### Using `curl` (Recommended):
 ```bash
-wget -q --show-progress -O telegram-bot-api https://github.com/mmahdi-sz/telegram-bot-api-bin/releases/download/v10.3/telegram-bot-api
+curl -sL https://github.com/mmahdi-sz/telegram-bot-api-bin/releases/download/v10.3/telegram-bot-api -o telegram-bot-api
 chmod +x telegram-bot-api
 ```
 
-### Or using `curl`:
+### Or using `wget`:
 ```bash
-curl -sL https://github.com/mmahdi-sz/telegram-bot-api-bin/releases/download/v10.3/telegram-bot-api -o telegram-bot-api
+wget -q --show-progress -O telegram-bot-api https://github.com/mmahdi-sz/telegram-bot-api-bin/releases/download/v10.3/telegram-bot-api
 chmod +x telegram-bot-api
 ```
 
@@ -37,7 +37,7 @@ chmod +x telegram-bot-api
 
 ## 🛠️ Usage
 
-Run the server with your Telegram API credentials (obtain them from [my.telegram.org](https://my.telegram.org)):
+Run the server with your Telegram API credentials:
 
 ```bash
 ./telegram-bot-api \
@@ -48,7 +48,18 @@ Run the server with your Telegram API credentials (obtain them from [my.telegram
   --dir=/path/to/data
 ```
 
-### Essential Flags:
+> [!TIP]
+> **Quick Testing Credentials (Development Only):**  
+> For easy, zero-setup testing without logging into `my.telegram.org`, you can use Telegram's public test credentials:
+> - `api_id`: `17349`
+> - `api_hash`: `344583e45741c457fe1862106095a5eb`
+>
+> ⚠️ **Warning:** These keys belong to Telegram's public desktop client and are intended **strictly for testing/development**. They are **NOT** suitable for production. For production bots, please generate your own API credentials at [my.telegram.org](https://my.telegram.org).
+
+---
+
+## ⚙️ Essential Flags
+
 | Flag | Description | Default |
 | :--- | :--- | :--- |
 | `--local` | Enables local server mode (allows up to 2GB file access) | `false` |
