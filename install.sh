@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-TAG=${1:-"v1.0.0"}
+TAG=${1:-"v10.3"}
 URL="https://github.com/mmahdi-sz/telegram-bot-api-bin/releases/download/${TAG}/telegram-bot-api"
 
 echo "📥 Downloading pre-compiled telegram-bot-api (${TAG})..."
